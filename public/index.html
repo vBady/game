@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kto polubił? - Gra</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1>Kto polubił?</h1>
+        <p class="subtitle">
+          Zgadnij, który znajomy polubił dany post, zanim skończy się czas!
+        </p>
+      </header>
+      <section class="scoreboard">
+        <div>Wynik: <span id="score">0</span></div>
+        <div>Najlepszy wynik: <span id="best-score">0</span></div>
+        <div>Pozostały czas: <span id="timer">30</span>s</div>
+      </section>
+      <section class="card" id="card">
+        <h2 id="post-title"></h2>
+        <p id="post-description"></p>
+        <ul class="options" id="options"></ul>
+      </section>
+      <section class="controls">
+        <button id="next-button" class="primary">Następna runda</button>
+        <button id="reset-button" class="secondary">Reset gry</button>
+      </section>
+      <footer>
+        <p>
+          Dodaj własnych znajomych i scenariusze w pliku <code>data.json</code> lub
+          zmodyfikuj listę bezpośrednio w kodzie JS.
+        </p>
+      </footer>
+    </main>
+    <template id="option-template">
+      <li class="option">
+        <button type="button" class="option-button"></button>
+      </li>
+    </template>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
