@@ -1,0 +1,21 @@
+{
+  "name": "wholiked-game",
+  "version": "1.0.0",
+  "description": "Simple Who Liked style guessing game hosted on Discloud",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "keywords": [
+    "game",
+    "wholiked",
+    "express",
+    "discloud"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "type": "module"
+}
